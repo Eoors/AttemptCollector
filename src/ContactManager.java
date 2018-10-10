@@ -3,19 +3,19 @@ import java.util.List;
 
 public class ContactManager {
 
-    List<Contact> myFriends;
+    ArrayList<Contact> myFriends;
     int friendsCount;
 
     ContactManager()
     {
         this.friendsCount = 0;
-        List<Contact> myFriends = new ArrayList<>();
+        ArrayList<Contact> myFriends = new ArrayList<>();
 
     }
 
     void addContact(Contact contact)
     {
-        myFriends.set(friendsCount, contact);
+        myFriends.add(contact);
         friendsCount++;
     }
 
@@ -23,7 +23,7 @@ public class ContactManager {
     {
         for(int i = 0; i < friendsCount ; i++)
         {
-            if(myFriends.get(i).name.equals(searchName))
+            if(myFriends.get(i).getName().equals(searchName))
             {
                 return myFriends.get(i);
             }
