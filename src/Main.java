@@ -1,4 +1,6 @@
 import javax.tools.JavaCompiler;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -19,11 +21,11 @@ public class Main {
         korte.setName("Korte");
         korte.phoneNumber = "+3630333";
 
-//        myContactManager.addContact(alma);
-//        myContactManager.addContact(barack);
-//        myContactManager.addContact(korte);
+        myContactManager.addContact(alma);
+        myContactManager.addContact(barack);
+        myContactManager.addContact(korte);
 
-        System.out.println(myContactManager.searchContact("Alma"));
+        System.out.println((myContactManager.searchContact("Alma")).phoneNumber);
     }
 
 }

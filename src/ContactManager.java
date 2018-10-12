@@ -3,13 +3,13 @@ import java.util.List;
 
 public class ContactManager {
 
-    ArrayList<Contact> myFriends;
+    List<Contact> myFriends;
     int friendsCount;
 
     ContactManager()
     {
         this.friendsCount = 0;
-        ArrayList<Contact> myFriends = new ArrayList<>();
+        myFriends = new ArrayList<Contact>();
 
     }
 
