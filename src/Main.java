@@ -9,7 +9,6 @@ public class Main {
         System.out.println("Hello EAR!");
         ContactManager myContactManager = new ContactManager();
 
-
         Contact alma = new Contact();
         Contact barack = new Contact();
         Contact korte = new Contact();
